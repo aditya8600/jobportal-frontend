@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom"
-const Admindashboard = () => {
+const AdminDashboard = () => {
     const navigate = useNavigate();
 
     const handleLogout = ()=>{
@@ -16,4 +16,4 @@ const Admindashboard = () => {
   )
 }
 
-export default Admindashboard
+export default AdminDashboard
