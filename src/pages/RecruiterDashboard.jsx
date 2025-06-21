@@ -1,5 +1,5 @@
 import { useNavigate, Link,Outlet } from "react-router-dom"
-const Recruiterdashboard = () => {
+const RecruiterDashboard = () => {
     const navigate = useNavigate();
 
     const handleLogout =()=>{
@@ -27,4 +27,4 @@ const Recruiterdashboard = () => {
   );
 };
 
-export default Recruiterdashboard
+export default RecruiterDashboard
