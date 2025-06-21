@@ -4,7 +4,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import AdminDashboard from "./pages/AdminDashboard";
-import Recruiterdashboard from "./pages/Recruiterdashboard";
+import RecruiterDashboard from "./pages/RecruiterDashboard";
 import CandidateDashboard from "./pages/candidate/CandidateDashboard";
 import PrivateRoute from "./components/PrivateRoute";
 import PostJob from "./pages/recruiter/PostJob";
@@ -44,7 +44,7 @@ function App() {
 
         <Route
           path="/recruiter-dashboard"
-          element={<PrivateRoute><Recruiterdashboard /></PrivateRoute>}
+          element={<PrivateRoute><RecruiterDashboard /></PrivateRoute>}
         >
           <Route index element={<RecruiterHome />} />
           <Route path="post-job" element={<PostJob />} />
