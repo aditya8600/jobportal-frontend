@@ -1,7 +1,12 @@
 import axios from "axios";
 
+const baseURL =
+  import.meta.env.MODE === "development"
+    ? "http://localhost:8000/api/"
+    : "https://jobportal-backend-m5so.onrender.com/api/";
+
 const API = axios.create({
-  baseURL: "http://localhost:8000/api/",
+  baseURL,
 });
 
 API.interceptors.request.use(

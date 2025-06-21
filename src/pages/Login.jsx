@@ -12,12 +12,14 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     setError("");
+    console.log("Trying to logging with:",email,password)
 
     try {
       const response = await API.post("login/", {
         email,
         password,
       });
+      console.log("Login response", response.data); 
 
       
       localStorage.setItem("access_token", response.data.access);
@@ -35,6 +37,7 @@ const Login = () => {
         alert("Unknown role. Please contact support.");
       }
     } catch (error) {
+        console.log("Login error:",error)
       if (error.response?.data) {
         setError(JSON.stringify(error.response.data, null, 2));
       } else {
