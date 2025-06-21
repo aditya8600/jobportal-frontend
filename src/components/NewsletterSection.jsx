@@ -1,4 +1,4 @@
-const NewsletterSection = () => (
+const NewsLetterSection = () => (
   <section className="py-16 bg-blue-50">
     <div className="max-w-2xl mx-auto text-center px-6">
       <h2 className="text-2xl font-bold text-blue-800 mb-4">Stay Updated</h2>
@@ -22,4 +22,4 @@ const NewsletterSection = () => (
   </section>
 );
 
-export default NewsletterSection;
+export default NewsLetterSection;

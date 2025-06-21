@@ -2,7 +2,7 @@ import NavBar from "../components/NavBar";
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
 import TestimonialsSection from "../components/TestimonalSection";
-import NewsletterSection from "../components/Newslettersection";
+import NewsLetterSection from "../components/Newslettersection";
 import Footer from "../components/Footer";
 
 const HomePage = () => {
@@ -12,7 +12,7 @@ const HomePage = () => {
       <HeroSection />
       <AboutSection />
       <TestimonialsSection/>
-      <NewsletterSection />
+      <NewsLetterSection/>
       <Footer />
     </>
   );
