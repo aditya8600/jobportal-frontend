@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
-import AdminDashboard from "./pages/Admindashboard";
+import AdminDashboard from "./pages/AdminDashboard";
 import Recruiterdashboard from "./pages/Recruiterdashboard";
 import CandidateDashboard from "./pages/candidate/CandidateDashboard";
 import PrivateRoute from "./components/PrivateRoute";
