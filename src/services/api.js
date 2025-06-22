@@ -5,7 +5,7 @@ const baseURL =
     ? "http://localhost:8000/api/"
     : "https://jobportal-backend-m5so.onrender.com/api/";
 
-const API = axios.create({ baseURL });
+const API = axios.create({ baseURL: import.meta.env.VITE_API_BASE_URL });
 
 API.interceptors.request.use(
   (config) => {
