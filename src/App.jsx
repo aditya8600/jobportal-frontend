@@ -47,6 +47,7 @@ function App() {
           element={<PrivateRoute><RecruiterDashboard /></PrivateRoute>}
         >
           <Route index element={<RecruiterHome />} />
+          <Route path="" element={<RecruiterHome />} />
           <Route path="post-job" element={<PostJob />} />
           <Route path="my-jobs" element={<MyJobs />} />
           <Route path="edit-job/:id" element={<EditJob />} />

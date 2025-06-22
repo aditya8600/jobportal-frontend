@@ -27,12 +27,18 @@ const Login = () => {
 
       
       const user = await getCurrentUser();
+      console.log("User after login:", user);
+       if (!user) {
+     setError("Unable to fetch user. Check network or token.");
+     return;
+    }
+
       if (user.role === "candidate") {
-        navigate("/candidate-dashboard");
+        navigate("/candidate-dashboard/");
       } else if (user.role === "recruiter") {
-        navigate("/recruiter-dashboard");
+        navigate("/recruiter-dashboard/");
       } else if (user.role === "admin") {
-        navigate("/admin-dashboard");
+        navigate("/admin-dashboard/");
       } else {
         alert("Unknown role. Please contact support.");
       }
