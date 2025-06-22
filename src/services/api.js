@@ -1,11 +1,8 @@
 import axios from "axios";
 
-const baseURL =
-  import.meta.env.MODE === "development"
-    ? "http://localhost:8000/api/"
-    : "https://jobportal-backend-m5so.onrender.com/api/";
-
-const API = axios.create({ baseURL: import.meta.env.VITE_API_BASE_URL });
+const API = axios.create({
+     baseURL: import.meta.env.VITE_API_BASE_URL 
+    });
 
 API.interceptors.request.use(
   (config) => {
@@ -34,7 +31,7 @@ API.interceptors.response.use(
       try {
         const refreshToken = localStorage.getItem("refresh_token");
 
-        const response = await axios.post(`${baseURL}token/refresh/`, {
+        const response = await axios.post(`${API.defaults.baseURL}token/refresh/`, {
           refresh: refreshToken,
         });
 
